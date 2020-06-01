@@ -89,3 +89,26 @@ if isprime(n):
 else:
     print(f'{n} if not prime')
 
+def list_primes():
+    for n in range(100):
+        if isprime(n):
+            print(n, end=' ', flush=True)
+
+list_primes()
+
+# Objects is an instance of a class (class is a definition)
+class Duck:
+    sound = 'Quakkkk!'
+    walking = 'Walks like a duck.'
+
+    def quack(self):
+        print(self.sound)
+    def walk(self):
+        print(self.walking)
+
+def main():
+    donald = Duck()
+    donald.quack()
+    donald.walk()
+
+if __name__ == '__main__': main()
