@@ -31,11 +31,61 @@ print('x = {}'.format(x)) # Used in Python 3 (Recommended to use)
 print(f'x = {x}') # From Python 3.6 onwards
 
 ## Blocks and spaces
+
+# Conditional Statement
 x = 42
 y = 73
-### Conditional Statement
+
 if x < y: 
     print('x < y: x is {} and y is {}'. format(x, y))
+elif x > y:
+    print('x > y: x is {} and y is {}'. format(x, y))
+elif x == y:
+    print('x = y: x is {} and y is {}'. format(x, y))
 else:
     print('something else')
+
+
+# Loops 
+## While loop
+words = ['one', 'two', 'three', 'four', 'five']
+
+n = 0
+while (n < 5):
+    print(words[n])
+    n += 1
+
+a, b = 0,1
+while b < 1000:
+    print(b, end = ' ', flush = True)
+    a, b = b, a + b 
+
+## For loop - Sequence (conveniently simple)
+for i in words:
+    print(i)
+
+# Functions
+def function (n):
+    print(n)
+    return n * 2
+
+x = function(47)
+print(x)
+
+## Is Prime or Not Prime function 
+def isprime(n):
+    if n <= 1:
+        return False
+    for x in range (2, n):
+        if n % x == 0:
+            return False
+    else:
+        return True
+
+n = 6
+
+if isprime(n):
+    print(f'{n} is prime')
+else:
+    print(f'{n} if not prime')
 
