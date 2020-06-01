@@ -24,6 +24,18 @@ if __name__ == '__main__': main()
 
 ## White spaces - Indented function
 
+## Print function evolution 
 x = 42
-print('x = {}'.format(x))
+print('x = %d' % x) # Used in Python 2
+print('x = {}'.format(x)) # Used in Python 3 (Recommended to use)
+print(f'x = {x}') # From Python 3.6 onwards
+
+## Blocks and spaces
+x = 42
+y = 73
+### Conditional Statement
+if x < y: 
+    print('x < y: x is {} and y is {}'. format(x, y))
+else:
+    print('something else')
 
