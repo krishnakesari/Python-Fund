@@ -46,3 +46,29 @@ print(type(x))
 x = True
 print('x is {}'.format(x))
 print(type(x))
+
+if x:
+    print("True")
+else:
+    print("False")
+
+
+# Sequence Type
+x = [1,2,3,4,5]
+x[2]
+for i in x :
+    print('i is {}'.format(i))
+
+x = [1,2,3,4,5]
+x[0] = 45
+for i in x :
+    print('i is {}'.format(i))
+
+x = range(5,10, 2) # (minimum, maximum and step)
+for i in x :
+    print('i is {}'.format(i))
+
+x = { 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5 }
+for k, v in x.items():
+    print('x is {}'.format(x))
+
