@@ -70,5 +70,30 @@ for i in x :
 
 x = { 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5 }
 for k, v in x.items():
-    print('x is {}'.format(x))
+    print('k: {}, v: {}'.format(k, v))
 
+x = { 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5 }
+x['three'] = 42 
+for k, v in x.items():
+    print('k: {}, v: {}'.format(k, v))
+
+# Type() and id() # type is a class
+x = (1,'two', 3, 4.0, 5)
+y = (2, 4.0, 'three', [4, "four"])
+print('x is {}'.format(x))
+print(type(x[1]))
+
+if x is y:
+    print("yes")
+else:
+    print("No")
+
+if isinstance(y, tuple):
+    print("tuple")
+elif isinstance(y, list):
+    print("list")
+else:
+    print("No")
+
+print(id(x))
+print(id(y))
